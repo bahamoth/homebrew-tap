@@ -1,25 +1,25 @@
 class Wimcc < Formula
   desc "What's in My Claude Code — local-only execution inspection with evidence-linked insight"
   homepage "https://github.com/bahamoth/whats-in-my-cc"
-  version "1.4.0"
+  version "1.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bahamoth/whats-in-my-cc/releases/download/v1.4.0/wimcc-aarch64-apple-darwin.tar.xz"
-      sha256 "ca48eba9caea024a89558a8ebf676c33ab377bf7a680262924c0b065f69c7268"
+      url "https://github.com/bahamoth/whats-in-my-cc/releases/download/v1.5.0/wimcc-aarch64-apple-darwin.tar.xz"
+      sha256 "b4167063b9edef02c95493bc5ab006a9946cd6d5718b555c7e3ee71649bc085c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bahamoth/whats-in-my-cc/releases/download/v1.4.0/wimcc-x86_64-apple-darwin.tar.xz"
-      sha256 "9b2282460a453808cc4b21c38dddc6ed881611df23882d75f53061091370b410"
+      url "https://github.com/bahamoth/whats-in-my-cc/releases/download/v1.5.0/wimcc-x86_64-apple-darwin.tar.xz"
+      sha256 "14636540d26eac5ace4ea2ae7862c803b74a22ecf71c576884045295148b08e1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bahamoth/whats-in-my-cc/releases/download/v1.4.0/wimcc-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "8fb73dcaaa33bb91fcd4f1edebc6952d019e38941026052b7fadb96945f2591d"
+      url "https://github.com/bahamoth/whats-in-my-cc/releases/download/v1.5.0/wimcc-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "971f6361b746dddfe6ac804f74afd3497d29995483b5da7d276fe289701552eb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bahamoth/whats-in-my-cc/releases/download/v1.4.0/wimcc-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "37c4cc04adc0d826ef6fc9f1cd9be2d5d3ea81af4f151cfc29cab2bb2135a029"
+      url "https://github.com/bahamoth/whats-in-my-cc/releases/download/v1.5.0/wimcc-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "c9aff3098d526d38f9ca5a040e2d50c21bdd60c5c798c857ec5c0fbcb6825440"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
